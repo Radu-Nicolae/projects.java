@@ -8,6 +8,7 @@
 ##### [4. Rent a Car](https://github.com/Radu-Nicolae/projects.java/tree/master/RentACar)
 ##### [5. Tic Tac Toe](https://github.com/Radu-Nicolae/projects.java/tree/master/TicTacToe) - including AI
 
+<hr>
 
-Besides, I included in this repo a "project" where I train my programming muscles daily. 
-##### [Programming Gym]()
+Besides, I included in this repo a "project" where I train my programming skills daily. 
+##### [Programming Gym](https://github.com/Radu-Nicolae/projects.java/tree/main/ProgrammingGym)
