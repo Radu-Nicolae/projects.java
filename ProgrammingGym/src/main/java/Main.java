@@ -9,6 +9,7 @@ public class Main {
 //        Exercise4.exercise4main();
 //        Exercise5.exercise5main();
 //        Exercise6.exercise6main();
-        Exercise7.exercise7main();
+//        Exercise7.exercise7main();
+        Exercise8.exercise8main();
     }
 }
