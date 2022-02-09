@@ -18,11 +18,13 @@ public class Exercise8 {
 
         List<List<Integer>> allArrays = new ArrayList<>();
         for (int i = 0; i < numberOfArrays; i++) {
-            System.out.print("Enter the number of elements from array number " + (i + 1) + ": ");
+            System.out.print("\n\nEnter the number of elements from array number " + (i + 1) + ": ");
             numberOfElements = scn.nextInt();
             List<Integer> array = new ArrayList<>();
 
+            System.out.println();
             for (int j = 0; j < numberOfElements; j++) {
+                System.out.print("Enter the element number " + (j + 1) + " from array number " + (i + 1) + ": " );
                 array.add(scn.nextInt());
             }
 
@@ -36,13 +38,21 @@ public class Exercise8 {
 //            }
 //            System.out.println("");
 //        }
+        System.out.println("");
 
         for (int i = 0; i < allArrays.size(); i++) {
             List<Integer> currentArray = allArrays.get(i);
-            List<Integer> sortedArray = currentArray;
+//            List<Integer> sortedArray = currentArray; java decided not to cooperate and we have to use "brute force"
+
+            //brute force started
+            List<Integer> sortedArray = new ArrayList<>();
+            for (int j = 0; j < currentArray.size(); j++) {
+                sortedArray.add(currentArray.get(j));
+            }
+            //brute force stopped
+
 
             Collections.sort(sortedArray);
-            System.out.println(sortedArray);
             boolean isItOk = true;
             for (int j = 0; j < currentArray.size(); j++) {
                 if (currentArray.get(j) != sortedArray.get(j)){
@@ -51,7 +61,8 @@ public class Exercise8 {
                 }
             }
 
-            System.out.println(isItOk);
+
+            System.out.println("The array number " + (i+1) + " sorted ascending: " + isItOk);
         }
         
     }
